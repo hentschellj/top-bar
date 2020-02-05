@@ -5,7 +5,7 @@ $(document).ready(function() {
       $bodyMargin = parseInt($body.css('margin-top').replace('px', '')),
       $barHeight = $('.topBar-main').outerHeight();
 
-  $barMain.show();
+  $barMain.slideDown();
   $body.animate({
     'margin-top': ($bodyMargin + $barHeight)
   });
