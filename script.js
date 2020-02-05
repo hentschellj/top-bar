@@ -1,9 +1,9 @@
 $(document).ready(function() {
-  let $barMain = $('.topBar-main');
-  let $barLever = $('.topBar-lever');
-  let $body = $('body');
-  let $bodyMargin = parseInt($body.css('margin-top').replace('px', ''));
-  let $barHeight = $('.topBar-main').outerHeight();
+  let $barMain = $('.topBar-main'),
+      $barLever = $('.topBar-lever'),
+      $body = $('body'),
+      $bodyMargin = parseInt($body.css('margin-top').replace('px', '')),
+      $barHeight = $('.topBar-main').outerHeight();
 
   $barMain.show();
   $body.animate({
