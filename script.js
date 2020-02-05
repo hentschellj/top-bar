@@ -7,7 +7,7 @@ $(document).ready(function() {
 
   $barMain.show();
   $body.animate({
-    'margin': ($bodyMargin + $barHeight)
+    'margin-top': ($bodyMargin + $barHeight)
   });
   $barLever.hide();
 
@@ -15,7 +15,7 @@ $(document).ready(function() {
     $barMain.slideToggle('200');
     $barLever.delay('400').slideToggle('200');
     $body.animate({
-      'margin': $bodyMargin
+      'margin-top': $bodyMargin
     });
   });
 
@@ -23,7 +23,7 @@ $(document).ready(function() {
     $barMain.delay('400').slideToggle('200');
     $(this).slideToggle('200');
     $body.animate({
-      'margin': ($bodyMargin + $barHeight)
+      'margin-top': ($bodyMargin + $barHeight)
     });
   });
 });
