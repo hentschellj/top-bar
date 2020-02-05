@@ -6,11 +6,11 @@ $(document).ready(function() {
   $barLever.hide();
   $('.topBar-close').on('click', function() {
     $barMain.slideToggle();
-    $barLever.slideToggle();
+    $barLever.delay('400').slideToggle();
   });
 
   $barLever.on('click', function() {
-    $barMain.slideToggle();
+    $barMain.delay('400').slideToggle();
     $(this).slideToggle();
   });
 });
