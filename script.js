@@ -1,13 +1,16 @@
 $(document).ready(function() {
-  $('.topBar-main').show();
-  $('.topBar-lever').hide();
+  let $barMain = $('.topBar-main');
+  let $barLever = $('.topBar-lever');
+
+  $barMain.show();
+  $barLever.hide();
   $('.topBar-close').on('click', function() {
-    $('.topBar-main').slideToggle();
-    $('.topBar-lever').slideToggle();
+    $barMain.slideToggle();
+    $barLever.slideToggle();
   });
 
-  $('.topBar-lever').on('click', function() {
-    $('.topBar-main').slideToggle();
+  $barLever.on('click', function() {
+    $barMain.slideToggle();
     $(this).slideToggle();
   });
 });
