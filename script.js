@@ -6,18 +6,24 @@ $(document).ready(function() {
   let $barHeight = $('.topBar-main').outerHeight();
 
   $barMain.show();
-  $body.css('margin', ($bodyMargin + $barHeight));
+  $body.animate({
+    'margin': ($bodyMargin + $barHeight)
+  });
   $barLever.hide();
 
   $('.topBar-close').on('click', function() {
     $barMain.slideToggle('200');
     $barLever.delay('400').slideToggle('200');
-    $body.css('margin', $bodyMargin);
+    $body.animate({
+      'margin': $bodyMargin
+    });
   });
 
   $barLever.on('click', function() {
     $barMain.delay('400').slideToggle('200');
     $(this).slideToggle('200');
-    $body.css('margin', ($bodyMargin + $barHeight));
+    $body.animate({
+      'margin': ($bodyMargin + $barHeight)
+    });
   });
 });
