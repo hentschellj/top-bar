@@ -5,4 +5,9 @@ $(document).ready(function() {
     $('.topBar-main').slideToggle();
     $('.topBar-lever').slideToggle();
   });
+
+  $('.topBar-lever').on('click', function() {
+    $('.topBar-main').slideToggle();
+    $(this).slideToggle();
+  });
 });
