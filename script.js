@@ -1,3 +1,4 @@
 $(document).ready(function() {
-  console.log('TEST!')
+  $('.topBar-main').show();
+  $('.topBar-lever').hide();
 });
