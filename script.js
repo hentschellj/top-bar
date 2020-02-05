@@ -3,10 +3,9 @@ $(document).ready(function() {
   let $barLever = $('.topBar-lever');
   let $bodyMargin = parseInt($('body').css('margin-top').replace('px', ''));
   let $barHeight = $('.topBar-main').outerHeight();
-  console.log($bodyMargin);
-  console.log($barHeight);
 
   $barMain.show();
+  $('body').css('margin', ($bodyMargin + $barHeight));
   $barLever.hide();
   $('.topBar-close').on('click', function() {
     $barMain.slideToggle('200');
