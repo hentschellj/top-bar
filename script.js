@@ -5,12 +5,12 @@ $(document).ready(function() {
   $barMain.show();
   $barLever.hide();
   $('.topBar-close').on('click', function() {
-    $barMain.slideToggle();
-    $barLever.delay('400').slideToggle();
+    $barMain.slideToggle('200');
+    $barLever.delay('400').slideToggle('200');
   });
 
   $barLever.on('click', function() {
-    $barMain.delay('400').slideToggle();
-    $(this).slideToggle();
+    $barMain.delay('400').slideToggle('200');
+    $(this).slideToggle('200');
   });
 });
